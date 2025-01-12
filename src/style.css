@@ -1,25 +1,237 @@
-#box{
-    background-color: aqua;
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.heading{
-    color: blue;
+/* Body and page layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
 }
 
-h1{
+/* Header section */
+header {
+    background-color: #333;
+    color: white;
     text-align: center;
+    padding: 40px 20px;
 }
 
-h3{
-    text-transform: capitalize;
-}
-#outer{
-    font-size: 25px;
-}
-#inner{
-    font-size: 15px;
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 
-.shraddha{
-    background-color: brown;
+header p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+header button {
+    background-color: #f4a261;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header button:hover {
+    background-color: #e76f51;
+}
+
+/* Navigation bar styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #f4a261;
+}
+
+/* About section */
+#about {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin-top: 30px;
+}
+
+#about h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#about img {
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+#about p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#about ul {
+    list-style: none;
+    padding: 0;
+}
+
+#about ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#about blockquote {
+    font-style: italic;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-top: 20px;
+    border-left: 4px solid #f4a261;
+}
+
+/* Portfolio section */
+#portfolio {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin-top: 30px;
+}
+
+#portfolio h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#portfolio ul {
+    list-style: none;
+    padding: 0;
+}
+
+#portfolio ul li {
+    margin-bottom: 20px;
+}
+
+#portfolio ul li h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#portfolio ul li p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#portfolio ul li a {
+    color: #f4a261;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#portfolio ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Contact section */
+#contact {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin-top: 30px;
+}
+
+#contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+#contact input,
+#contact textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    background-color: #f4a261;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#contact button:hover {
+    background-color: #e76f51;
+}
+
+/* Footer section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer ul li a:hover {
+    color: #f4a261;
+}
+
+footer address {
+    font-size: 16px;
+    margin-top: 20px;
 }

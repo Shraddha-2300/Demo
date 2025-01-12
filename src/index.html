@@ -4,36 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
     <nav>
         <ul>
-           <li><a href="#home">Home</a></li> 
-           <li><a href="#about">About</a></li> 
-           <li><a href="#project">Project</a></li> 
-           <li><a href="#contact">Cotact</a></li> 
+           <li><a href="#about">About Me</a></li> 
+           <li><a href="#portfolio">Portfolio</a></li> 
+           <li><a href="#contact">Contact Me</a></li> 
         </ul>  
     </nav>
-    <h4>Shraddha Nikam</h4>
+
+    <h1>Shraddha Nikam</h1>
     <p>Software Engineer at GS Lab</p>
+    <button type="Hire Me">Hire Me</button>
 </header>
 
 
-<section>
-    <h2>My Portfolio</h2>
-    <p>I am shraddha Nikam, soon to be </p>
+<section id="about">
+    <h2>About Me</h2>
     <img src="../src/static/Me.jpeg" alt="Me" height="150">
-<ul>Skiils
+    <p>I am Shraddha Nikam, a passionate software engineer with a love for coding and problem-solving. Currently,
+       I am diving into front-end development and learning React to build interactive and dynamic web applications.</p>
+
+
+ <h3>My Skills</h3>   
+    <ul>
         <li>Cooking</li>
         <li>Crafting</li>
+        <li>Reading</li>
         <li>Now Coding</li>
     </ul>
+    
+    <blockquote>
+      "Sometimes, you can't understand the situation, but you can still choose how to respond."
+    </blockquote>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 </section>
 
-<section>
-    <h2>My Projects</h2>
+<section id="portfolio">
+    <h2>Portfolio</h2>
     
     <ul>
       <li>
@@ -45,16 +59,38 @@
    </ul> 
 </section>
 
-<section>
+<section id="contact">
     <h2>Contact Me</h2>
     
     <form action="submit_form.php" method="POST">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
       
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
       
-      <button type="submit">Submit</button>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      
+      <button type="submit">Send Message</button>
     </form>
   </section>
+
+  <footer>
+    <p> My Portfolio</p>
+    
+    <ul>
+      <li><a href="https://linkedin.com" target="_blank">
+        <img src="../src/static/linkedIn.png" alt="LinkedIn" height="20">LinkedIn</a></li>
+
+      <li><a href="https://github.com/Shraddha-2300/Demo" target="_blank">
+        <img src="../src/static/github.jpg" alt="GitHub" height="20"> GitHub</a></li>
+    </ul>
+  
+
+    <address>
+     Pimpri Chinchwad Pune 19
+    </address>
+  </footer>
 </body>
 </html>
